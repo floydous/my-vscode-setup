@@ -1,0 +1,127 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "ctrl+p ctrl+l",
+		"command": "workbench.action.focusActiveEditorGroup"
+	},
+	{
+		"key": "ctrl+alt+m",
+		"command": "workbench.action.terminal.focus",
+		"when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-workbench.action.terminal.focus",
+		"when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "ctrl+l ctrl+\\",
+		"command": "workbench.action.splitEditorLeft"
+	},
+	{
+		"key": "ctrl+k ctrl+\\",
+		"command": "-workbench.action.splitEditorLeft"
+	},
+	{
+		"key": "ctrl+p ctrl+k",
+		"command": "workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "-workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "ctrl+p ctrl+p",
+		"command": "code-runner.run"
+	},
+	{
+		"key": "ctrl+alt+n",
+		"command": "-code-runner.run"
+	},
+	{
+		"key": "ctrl+p ctrl+o",
+		"command": "workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-tabnine.instruct",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action.quickOpenView"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+		"when": "inQuickOpen && inViewsPicker"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "workbench.action.terminal.kill"
+	},
+	{
+		"key": "ctrl+c ctrl+z",
+		"command": "workbench.action.quickOpenNavigateNextInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
+	},
+	{
+		"key": "alt+e",
+		"command": "revealFileInOS",
+		"when": "editorTextFocus || terminalFocus"
+	},
+	{
+		"key": "shift+alt+r",
+		"command": "-revealFileInOS",
+		"when": "!editorFocus"
+	},
+	{
+		"key": "ctrl+alt+e",
+		"command": "remote-wsl.revealInExplorer",
+		"when": "editorFocus && remoteName == 'wsl'"
+	},
+	{
+		"key": "shift+alt+r",
+		"command": "-remote-wsl.revealInExplorer",
+		"when": "editorFocus && remoteName == 'wsl'"
+	},
+	{
+		"key": "ctrl+=",
+		"command": "-workbench.action.zoomIn"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "-workbench.action.zoomOut"
+	},
+	{
+		"key": "shift+alt+p",
+		"command": "markdown.showPreview",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+shift+v",
+		"command": "-markdown.showPreview",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+shift+\\",
+		"command": "geminicodeassist.generateCode",
+		"when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && !inGeminiDiffView && !isInDiffEditor && !nextEditSessionAvailable"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-geminicodeassist.generateCode",
+		"when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && !inGeminiDiffView && !isInDiffEditor && !nextEditSessionAvailable"
+	}
+]
